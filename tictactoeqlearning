@@ -1,0 +1,8 @@
+class TicTacToeState:
+    def __init__(self, board, player):
+        self.board = [[j for j in i] for i in board]
+        self.player = player
+    
+    def __str__(self):
+        return f"{self.board[0]} \n{self.board[1]} \n{self.board[2]}\n {self.player}"
+        # return f"{self.player}"
